@@ -21,16 +21,19 @@ h2 {
     color: rgb(110, 109, 109);
     text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
 }
+#instructions{
+    color: rgb(43, 39, 39);
+}
 #slogan{
     margin-top: 0px;
     text-shadow: white 1px 1px, white 1px 1px, white 1px 1px, white 1px 1px;
 }
 
 h3{
-    color: rgb(178, 126, 126);
+    color: rgb(224, 103, 59);
 }
 li{
-    color:rgb(210, 105, 105);
+    color:orange;
     margin-left: 23px;
 }
 main{
