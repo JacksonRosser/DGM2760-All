@@ -40,10 +40,12 @@ main{
 footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(210, 105, 105);
+    background-color: bisque;
     max-height: auto;  
     max-width: 800px;
     margin: auto; 
+    border: solid 1px orange;
+    margin-top: 20px;
 }
 .info{
     color: rgb(210, 105, 105);
@@ -53,11 +55,44 @@ footer{
 footer p{
     color: rgb(43, 39, 39);
     margin: auto;
+    
     text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
 }
 li::marker{
-content: "💎"
+content: "✅"
 }
 ul{
     color: rgb(69, 69, 69);
 } 
+.playingField{
+    background-color: orange;
+    min-height: 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+.a1{
+    min-width: auto;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.a2, .a3, .a4{
+    min-width: 100px;
+    text-align: center;
+    
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.collapse{
+    min-width: 20px;
+}
+.a2 div{
+    font-size: 2rem;
+}
+#gameArea{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: bisque;
+}

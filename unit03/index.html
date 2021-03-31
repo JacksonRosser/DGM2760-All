@@ -9,7 +9,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onresize=reDisplay() onplaying=reDisplay()>
+<body>
     <header>
         <h1 id="title"></h1>
         <h2 id="slogan"></h2>
@@ -19,23 +19,42 @@
         <h1 class="subHead">Guessing Game</h1>
         <h3>What I learned</h3>
         <ul class="objectives">
-            <li></li>
-
+            <li>How to Create Functions with Javascript and call them via user interaction (button)</li>
+            <li>How to Create if/else statements that return unique messages</li>
+            <li>How to Organize a github repo with a portfolio page</li>
+            <li>How to Increment a variable and return it to the </li>
+            <li>How to create an operating switch statement with 3 unique outcomes for 7 cases</li>
+            <li>How to manipulate the DOM and make specific images appear in certain cases</li>
+            <li>How to create an html element using only Javascript</li>
         </ul>
         <h2>Instructions</h2>
-        <p>In this game, you will be trying to guess a number between 1 and 15 in as few tries as possible.
+        <p>In this game, you will be trying to guess a number between 0 and 16 in as few tries as possible.
             You will be awarded a ribbon for your skills, so Good Luck! If you would like to play again, refresh
             the page.
         </p>
+        <div id="gameArea">
         <article class="a1">
             <h2>Play</h2>
-            <div>
-
-                
+            <div class="playingField">
+                <input id="guess" type="number" placeholder="number" />
+                <button onclick="evalGuess()">Guess</button>
             </div>
-
         </article>
-        
+        <article class="a2">
+            <h2>Trys</h2>
+            <div id="attempts" class="playingField"></div>
+        </article>
+
+        <article class="a3">
+            <h2>Feedback</h2>
+            <div id="feedback" class="playingField"></div>
+        </article>
+        <div class="collapse"></div>
+        <article class="a4">
+            <h2>Award</h2>
+            <div id="ribbon" class="playingField"></div>
+        </article>
+    </div>
     </main>
 
     <footer>
