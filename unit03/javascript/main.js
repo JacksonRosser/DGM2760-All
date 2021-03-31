@@ -22,13 +22,13 @@ function evalGuess() {
     gamerGuess = document.querySelector('#guess').value
 
     const feedback = document.querySelector('#feedback')
-    console.log(gamerGuess, correctNumber, totalGuesses)
+    console.log(`${gamerGuess}, The correct number is ${correctNumber}, ${totalGuesses}`)
 
     const attempts = document.querySelector("#attempts")
 
 
     if (gamerGuess == correctNumber) {
-        feedback.innerText = "Right On! You win!"
+        feedback.innerText = `Right On! You win!` +`\n`+  `The corect number was ${correctNumber}`
         //After winning, award a ribbon
         giveAward()
     } else if (gamerGuess > correctNumber && gamerGuess < 16) {
@@ -43,6 +43,7 @@ function evalGuess() {
 
     attempts.innerText = totalGuesses
 }
+
 function giveAward() {
     console.log("congraduritos")
     let imagePath="#"
@@ -51,18 +52,27 @@ switch(totalGuesses){
     case 1:
     case 2:
     case 3:
+        if (awardImage.hasAttribute('src'===true)){
+            return;
+        }else{
         awardImage.setAttribute('src', 'images/blueRibbon.png')
-        console.log("blue ribbon be urz")
+        console.log("blue ribbon be urz")}
         break;
     case 4:
     case 5:
     case 6:
+        if (awardImage.hasAttribute('src'===true)){
+            return;
+        }else{
         awardImage.setAttribute('src', 'images/redRibbon.png')
-        console.log('red ribon foi ya')
+        console.log('red ribon foi ya')}
         break;
     default:
+        if (awardImage.hasAttribute('src'===true)){
+            return;
+        }else{
         console.log('yella ribzy iz heya')
-        awardImage.setAttribute('src', 'images/yellowRibbon.png')
+        awardImage.setAttribute('src', 'images/yellowRibbon.png')}
 }
 
 }
@@ -71,3 +81,4 @@ const awardImage = document.createElement('img')//creates an image tag with no s
 const ribbon = document.querySelector('#ribbon')//selects ribbon div
 ribbon.appendChild(awardImage)//adds img tag to div element, now we just need to change the image src depending on the case
 
+//if (awardImage.hasAttribute('src'===true)){
