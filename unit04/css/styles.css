@@ -14,6 +14,9 @@ header {
     text-shadow: white 1px 1px, white 1px 1px, white 1px 1px, white 1px 1px;
     font-size: 25px;
 }
+.subHead{
+    color: rgb(118, 0, 106);
+}
 h1{
     color: rgb(43, 39, 39);
 }
@@ -30,10 +33,10 @@ h2 {
 }
 
 h3{
-    color: rgb(224, 103, 59);
+    color: rgb(254, 0, 250);
 }
 li{
-    color:orange;
+    color: rgb(156, 79, 136);
     margin-left: 23px;
 }
 main{
@@ -47,7 +50,7 @@ footer{
     max-height: auto;  
     max-width: 800px;
     margin: auto; 
-    border: solid 1px orange;
+    border: solid 1px rgb(254, 0, 250);
     margin-top: 20px;
 }
 .info{
@@ -62,18 +65,12 @@ footer p{
     text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
 }
 li::marker{
-content: "✅"
+content: "👌"
 }
 ul{
     color: rgb(69, 69, 69);
 } 
-.playingField{
-    background-color: orange;
-    min-height: 5rem;
-    max-width: 800px;
-    margin: 0 auto;
-    
-}
+
 .a1{
     min-width: auto;
     padding-bottom: 7px;

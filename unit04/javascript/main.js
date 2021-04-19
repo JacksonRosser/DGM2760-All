@@ -6,11 +6,7 @@ function getRandomNumberInclusive(min, max) {
     return Math.floor(Math.random() * (max - min)) + min
 }
 
-//build a switch that calls a month from 1-12
 
-//Pick random number from 1-12
-let month = getRandomNumberInclusive(1, 12)
-//use that number to call a certain switch; 1=jan, 2=feb, etc.
 function getRandomMonth(month) {
     let name
     switch (month) {
@@ -56,110 +52,110 @@ function getRandomMonth(month) {
     return name
 
 }
-//build switch that generates a day
-let day = getRandomNumberInclusive(1, 30)
+
+
 
 function getDay(day) {
     let title
     switch (day) {
         case 1:
-            let title = "1st"
+            title = "1st"
             break;
         case 2:
-            let title = "2nd"
+            title = "2nd"
             break;
         case 3:
-            let title = "3rd"
+            title = "3rd"
             break;
         case 4:
-            let title = "4th"
+            title = "4th"
             break;
         case 5:
-            let title = "5th"
+            title = "5th"
             break;
         case 6:
-            let title = "6th"
+            title = "6th"
             break;
         case 7:
-            let title = "7th"
+            title = "7th"
             break;
         case 8:
-            let title = "8th"
+            title = "8th"
             break;
         case 9:
-            let title = "9th"
+            title = "9th"
             break;
         case 10:
-            let title = "10th"
+            title = "10th"
             break;
         case 11:
-            let title = "11th"
+            title = "11th"
             break;
         case 12:
-            let title = "12th"
+            title = "12th"
             break;
         case 13:
-            let title = "13th"
+            title = "13th"
             break;
         case 14:
-            let title = "14th"
+            title = "14th"
             break;
         case 15:
-            let title = "15th"
+            title = "15th"
             break;
         case 16:
-            let title = "16th"
+            title = "16th"
             break;
         case 17:
-            let title = "17th"
+            title = "17th"
             break;
         case 18:
-            let title = "18th"
+            title = "18th"
             break;
         case 19:
-            let title = "19th"
+            title = "19th"
             break;
         case 20:
-            let title = "20th"
+            title = "20th"
             break;
         case 21:
-            let title = "21st"
+            title = "21st"
             break;
         case 22:
-            let title = "22nd"
+            title = "22nd"
             break;
         case 23:
-            let title = "23rd"
+            title = "23rd"
             break;
         case 24:
-            let title = "24th"
+            title = "24th"
             break;
         case 25:
-            let title = "25th"
+            title = "25th"
             break;
         case 26:
-            let title = "26th"
+            title = "26th"
             break;
         case 27:
-            let title = "27th"
+            title = "27th"
             break;
         case 28:
-            let title = "28th"
+            title = "28th"
             break;
         case 29:
-            let title = "29th"
+            title = "29th"
             break;
         case 30:
-            let title = "30th"
+            title = "30th"
             break;
         default:
-            let title = "Not a real day"
+            title = "Not a real day"
             break;
     }
     return title
 }
-//function to determine one of five messages/fates
-let fate = getRandomNumberInclusive(1, 5)
+
+
 function getFortuneFate(fate) {
     let message
     switch (fate) {
@@ -179,13 +175,24 @@ function getFortuneFate(fate) {
             message = "defeat your greatest foe"
             break;
         default:
+            message = "not a real fortune"
             break;
     }
+    return message
 }
-//call each function and parse the result into a message
+
+
+let month = getRandomNumberInclusive(1, 12)
+let day = getRandomNumberInclusive(1, 30)
+let fate = getRandomNumberInclusive(1, 5)
+
 const monthName = getRandomMonth(month)
 const dayName = getDay(day)
 const fateMessage = getFortuneFate(fate)
-const fortuneRevealed = `On the ${dayName} of ${monthName}, you will ${fateMessage}`
+const fortuneRevealed = `On the ${dayName} of ${monthName}, you will ${fateMessage}.`
+
+console.log(monthName)
+console.log(dayName)
+console.log(fateMessage)
 
 document.querySelector('#fortune').innerText = fortuneRevealed
