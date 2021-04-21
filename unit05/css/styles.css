@@ -8,7 +8,7 @@ header {
     margin: 0 auto;
     text-align: center;
     border: solid 1px;
-    background-image: url("../images/fortuneTeller.jpg");
+    background-image: url("../images/tree.jpg");
     background-size: cover;
     height: 190px;
     text-shadow: white 1px 1px, white 1px 1px, white 1px 1px, white 1px 1px;
@@ -65,7 +65,7 @@ footer p{
     text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
 }
 li::marker{
-content: "👌"
+content: "🌱"
 }
 ul{
     color: rgb(69, 69, 69);
