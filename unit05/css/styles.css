@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(230, 190, 244);
+    background-color: rgb(190, 244, 209);
     font-size: larger;
 } 
 header {
@@ -14,8 +14,32 @@ header {
     text-shadow: white 1px 1px, white 1px 1px, white 1px 1px, white 1px 1px;
     font-size: 25px;
 }
+#newArea{
+    display:flex;
+    flex-direction: row;
+}
+#displayArea{
+    margin-left: 20px;
+}
+#treeDisplay{
+    background-color: rgb(79, 156, 106);
+}
+.buttonList{
+    display:flex;
+    flex-direction: column;
+}
+button{
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px; 
+}
 .subHead{
-    color: rgb(118, 0, 106);
+    color: rgb(0, 164, 57);
+    text-decoration: underline;
+}
+span{
+    color: red;
+    size: 1px;
 }
 h1{
     color: rgb(43, 39, 39);
@@ -33,10 +57,10 @@ h2 {
 }
 
 h3{
-    color: rgb(254, 0, 250);
+    color: rgb(106, 251, 73);
 }
 li{
-    color: rgb(156, 79, 136);
+    color: rgb(11, 111, 0);
     margin-left: 23px;
 }
 main{
@@ -46,11 +70,11 @@ main{
 footer{
     display: flex;
     justify-content: center;
-    background-color: purple;
+    background-color: rgb(21, 154, 6);
     max-height: auto;  
     max-width: 800px;
     margin: auto; 
-    border: solid 1px rgb(254, 0, 250);
+    border: solid 1px rgb(0, 254, 110);
     margin-top: 20px;
 }
 .info{
@@ -67,9 +91,7 @@ footer p{
 li::marker{
 content: "🌱"
 }
-ul{
-    color: rgb(69, 69, 69);
-} 
+
 
 .a1{
     min-width: auto;
