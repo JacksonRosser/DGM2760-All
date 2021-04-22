@@ -11,7 +11,11 @@ header {
     background-image: url("../images/words.jpg");
     background-size: cover;
     height: 190px;
-    text-shadow: white 1px 1px, white 1px 1px, white 1px 1px, white 1px 1px;
+    text-shadow: darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px;
+    font-size: 25px;
+}
+#slogan{
+    text-shadow: darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px;
     font-size: 25px;
 }
 #newArea{
@@ -30,18 +34,18 @@ article{
 }
 #nouns{
     margin: 0px;
-    width: 113px;
-    height: 127px;
+    width: 197px;
+    height: 57px;
 }
 #verbs{
     margin: 0px;
-    width: 113px;
-    height: 127px;
+    width: 197px;
+    height: 57px;
 }
 #adjectives{
     margin: 0px;
-    width: 113px;
-    height: 127px;
+    width: 197px;
+    height: 57px;
 }
 #storyDisplay{
     margin:left;
@@ -81,7 +85,8 @@ h2 {
 }
 #slogan{
     margin-top: 0px;
-    text-shadow: white 1px 1px, white 1px 1px, white 1px 1px, white 1px 1px;
+    text-shadow: darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px;
+    font-size: 35px;
 }
 
 h3{
