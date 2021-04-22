@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 Arborist</title>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Arborist</h1>
+        <h2 id="slogan">The man with the plan...ts</h2>
+    </header>
+
+    <main>
+        <h1 class="subHead">Arborist</h1>
+        <h3>What I learned</h3>
+        <ul class="objectives">
+            <li>I learned how to use event Listeners</li>
+            <li>I learned how to manipulate values in an array</li>
+            <li>I learned how to us event Handlers</li>
+            <li>I learned how to monitor for and display error messages on incoming values</li>
+            <li>I learned how to find solutions to complex problems using mdn</li>
+            <li>I learned how to use a "For Each" loop</li>
+
+            <div id="newArea">
+
+                <div id="buttonArea">
+                    <h2>Adding Trees</h2>
+                    <div class="buttonList">
+                    <button id="add_redwood">Add a Redwood Tree to the End</button>
+                    <button id="add_pear">Add a Pear Tree to the Start</button>
+                    </div>
+                    <h2>Removing Trees</h2>
+                    <div class="buttonList">
+                    <button id="remove_tree1">Remove the First tree</button>
+                    <button id="remove_tree2">Remove the Second tree </button>
+                    <button id="remove_treeLast">Remove the Last tree</button>
+                    </div>
+                    <h2>Manipulating Tree List</h2>
+                    <div class="buttonList">
+                    <button id="sortTrees">Sorting the list A-Z</button>
+                    <button id="lowerTrees">Make all trees Lowecase</button>
+                    </div>
+                    <h2>Getting any tree from the list</h2>
+                    <div class="buttonList">
+                    <button id="showName3">What is the name of Tree Number 3</button>
+                    <button id="showName4">What is the name of Tree Number 4</button>
+                    </div>
+                </div>
+
+                <div id="displayArea">
+                    <aside>
+                        <h2 class="subHead">Tree List</h2>
+                        <div id="treeDisplay"></div>
+                        <h2>Error Messages</h2>
+                        <div id="errorDisplay"></div>
+                    </aside>
+                </div>
+
+            </div>
+    </main>
+
+    <footer>
+        <p>DGM 2760 Jackson Rosser</p>
+    </footer>
+    <script type="text/javascript" src="javascript/main.js"></script>
+</body>
+
+</html>
