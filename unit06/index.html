@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1 id="title">Nonsense Story</h1>
-        <h2 id="slogan">The man with the plan...ts</h2>
+        <h2 id="slogan">String Manipulation</h2>
     </header>
 
     <main>
@@ -19,43 +19,37 @@
         <h3>What I learned</h3>
         <ul class="objectives">
             <li>I learned how to create template literals or strings</li>
-            
+            <li>I learned to take text content from elements</li>
+            <li>I learned how to turn a string into an array</li>
+            <li>I learned how to escape, cocatenate, and lowercase strings</li>
+            <li>I learned how to extract text content from existing HTML elemnts</li>
+        </ul>
 
             <div id="newArea">
+                <article>
+                    <h2>Nouns:</h2>
+                    <textarea id="nouns">Ladybugs House
+Rabbit Car
+Frog</textarea>
+                </article>
 
-                <div id="buttonArea">
-                    <h2>Adding Trees</h2>
-                    <div class="buttonList">
-                    <button id="add_redwood">Add a Redwood Tree to the End</button>
-                    <button id="add_pear">Add a Pear Tree to the Start</button>
-                    </div>
-                    <h2>Removing Trees</h2>
-                    <div class="buttonList">
-                    <button id="remove_tree1">Remove the First tree</button>
-                    <button id="remove_tree2">Remove the Second tree </button>
-                    <button id="remove_treeLast">Remove the Last tree</button>
-                    </div>
-                    <h2>Manipulating Tree List</h2>
-                    <div class="buttonList">
-                    <button id="sortTrees">Sorting the list A-Z</button>
-                    <button id="lowerTrees">Make all trees Lowecase</button>
-                    </div>
-                    <h2>Getting any tree from the list</h2>
-                    <div class="buttonList">
-                    <button id="showName3">What is the name of Tree Number 3</button>
-                    <button id="showName4">What is the name of Tree Number 4</button>
-                    </div>
-                </div>
+                <article>
+                    <h2>Adjectives:</h2>
+                    <textarea id="adjectives">
+Pretty Clean
+Fast</textarea>
+                </article>
 
-                <div id="displayArea">
-                    <aside>
-                        <h2 class="subHead">Tree List</h2>
-                        <div id="treeDisplay"></div>
-                        <h2>Error Messages</h2>
-                        <div id="errorDisplay"></div>
-                    </aside>
-                </div>
-
+                <article>
+                    <h2>Verbs:</h2>
+                    <textarea id="verbs">
+Drive Eat
+Explore</textarea>
+                </article>
+            </div>
+    <button onclick="tellStory()">Click here to create story</button>
+            <div id="storyDisplay">
+                <p id="story"></p>
             </div>
     </main>
 

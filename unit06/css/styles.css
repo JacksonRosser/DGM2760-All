@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(190, 244, 209);
+    background-color: rgb(190, 235, 244);
     font-size: larger;
 } 
 header {
@@ -8,7 +8,7 @@ header {
     margin: 0 auto;
     text-align: center;
     border: solid 1px;
-    background-image: url("../images/tree.jpg");
+    background-image: url("../images/words.jpg");
     background-size: cover;
     height: 190px;
     text-shadow: white 1px 1px, white 1px 1px, white 1px 1px, white 1px 1px;
@@ -17,6 +17,35 @@ header {
 #newArea{
     display:flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+article h2{
+    text-decoration: underline;
+    color: rgb(0, 49, 164)
+}
+article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nouns{
+    margin: 0px;
+    width: 113px;
+    height: 127px;
+}
+#verbs{
+    margin: 0px;
+    width: 113px;
+    height: 127px;
+}
+#adjectives{
+    margin: 0px;
+    width: 113px;
+    height: 127px;
+}
+#storyDisplay{
+    margin:left;
+    background-color: rgb(228, 247, 251);
 }
 #displayArea{
     margin-left: 20px;
@@ -34,12 +63,11 @@ button{
     margin: 10px; 
 }
 .subHead{
-    color: rgb(0, 164, 57);
+    color: rgb(0, 49, 164);
     text-decoration: underline;
 }
 span{
     color: red;
-    size: 1px;
 }
 h1{
     color: rgb(43, 39, 39);
@@ -57,10 +85,10 @@ h2 {
 }
 
 h3{
-    color: rgb(106, 251, 73);
+    color: rgb(73, 168, 251);
 }
 li{
-    color: rgb(11, 111, 0);
+    color: rgb(6, 110, 154);
     margin-left: 23px;
 }
 main{
@@ -70,11 +98,11 @@ main{
 footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(21, 154, 6);
+    background-color: rgb(6, 110, 154);
     max-height: auto;  
     max-width: 800px;
     margin: auto; 
-    border: solid 1px rgb(0, 254, 110);
+    border: solid 1px rgb(0, 169, 254);
     margin-top: 20px;
 }
 .info{
@@ -89,7 +117,7 @@ footer p{
     text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
 }
 li::marker{
-content: "🌱"
+content: "🧞‍♂️"
 }
 
 
