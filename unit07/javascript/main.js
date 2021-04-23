@@ -1,6 +1,7 @@
 let message
 let shoppingList
 //creating pizza object with default properites and two methods
+
 const pizza = {
     crust: 'thin',
     size: 'small',
@@ -18,7 +19,7 @@ const pizza = {
         if (pizza.crust === 'thick') flour *= 2 
         if (pizza.size === "large") flour *= 2, cheese *=2, topping *= 2
 
-        shoppingList = `If you want to make your pizza at home you will need <span>${flour}</span> bag(s) of flour, <span>${topping}</span> package(s) of <span>${pizza.topping}</span>, <span>${cheese}</span> cup(s) of cheese, a <span>${pizza.size}</span> can of sauce, and a <span>${pizza.size}</span> baking pan`
+        shoppingList = `If you want to make your pizza at home you will need <span>${flour}</span> bag(s) of flour, <span>${topping}</span> lb(s) of <span>${pizza.topping}</span>, <span>${cheese}</span> cup(s) of cheese, a <span>${pizza.size}</span> can of sauce, and a <span>${pizza.size}</span> baking pan`
         document.querySelector('#feedback').innerHTML = shoppingList
     }
 }
