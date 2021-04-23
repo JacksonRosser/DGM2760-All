@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(244, 226, 190);
+    font-size: larger;
+} 
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px;
+    background-image: url("../images/pizza.jpg");
+    background-size: cover;
+    height: 190px;
+    text-shadow: darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
+    font-size: 25px;
+}
+#slogan{
+    text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
+    font-size: 25px;
+}
+#newArea{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+article h2{
+    text-decoration: underline;
+    color: rgb(0, 49, 164)
+}
+article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nouns{
+    margin: 0px;
+    width: 197px;
+    height: 57px;
+}
+#verbs{
+    margin: 0px;
+    width: 197px;
+    height: 57px;
+}
+#adjectives{
+    margin: 0px;
+    width: 197px;
+    height: 57px;
+}
+#storyDisplay{
+    margin:left;
+    background-color: rgb(228, 247, 251);
+}
+#displayArea{
+    margin-left: 20px;
+}
+#treeDisplay{
+    background-color: rgb(79, 156, 106);
+}
+.buttonList{
+    display:flex;
+    flex-direction: column;
+}
+button{
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px; 
+}
+.subHead{
+    color: orange;
+    text-decoration: underline;
+}
+span{
+    color: red;
+}
+h1{
+    color: rgb(43, 39, 39);
+}
+#menu h2{
+    font-size: larger;
+}
+h2 {
+    color: goldenrod;
+    text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
+}
+#instructions{
+    color: rgb(43, 39, 39);
+}
+#slogan{
+    margin-top: 0px;
+    text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
+    font-size: 35px;
+}
+
+h3{
+    color: rgb(183, 162, 57);
+}
+li{
+    color: rgb(186, 1, 1);
+    margin-left: 23px;
+}
+main{
+    max-width: 750px;
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: darkgoldenrod;
+    max-height: auto;  
+    max-width: 800px;
+    margin: auto; 
+    border: solid 1px rgb(254, 233, 0);
+    margin-top: 20px;
+}
+.info{
+    color: rgb(210, 105, 105);
+    text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
+    padding-left: 46px;
+}
+footer p{
+    color: whitesmoke;
+    margin: auto;
+    
+    text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
+}
+li::marker{
+content: "🍕"
+}
+
+
+.a1{
+    min-width: auto;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.a2, .a3, .a4{
+    min-width: 100px;
+    text-align: center;
+    
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.collapse{
+    min-width: 20px;
+}
+.a2 div{
+    font-size: 2rem;
+}
+#gameArea{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: bisque;
+}
