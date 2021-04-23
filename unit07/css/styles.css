@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(190, 235, 244);
+    background-color: rgb(244, 226, 190);
     font-size: larger;
 } 
 header {
@@ -8,14 +8,14 @@ header {
     margin: 0 auto;
     text-align: center;
     border: solid 1px;
-    background-image: url("../images/words.jpg");
+    background-image: url("../images/pizza.jpg");
     background-size: cover;
     height: 190px;
-    text-shadow: darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px;
+    text-shadow: darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
     font-size: 25px;
 }
 #slogan{
-    text-shadow: darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px, darkblue 3px 3px;
+    text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
     font-size: 25px;
 }
 #newArea{
@@ -77,7 +77,7 @@ h1{
     color: rgb(43, 39, 39);
 }
 h2 {
-    color: rgb(110, 109, 109);
+    color: goldenrod;
     text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
 }
 #instructions{
@@ -90,10 +90,10 @@ h2 {
 }
 
 h3{
-    color: rgb(73, 168, 251);
+    color: rgb(251, 221, 73);
 }
 li{
-    color: rgb(6, 110, 154);
+    color: rgb(186, 1, 1);
     margin-left: 23px;
 }
 main{
@@ -103,11 +103,11 @@ main{
 footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(6, 110, 154);
+    background-color: darkgoldenrod;
     max-height: auto;  
     max-width: 800px;
     margin: auto; 
-    border: solid 1px rgb(0, 169, 254);
+    border: solid 1px rgb(254, 233, 0);
     margin-top: 20px;
 }
 .info{
