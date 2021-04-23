@@ -1,37 +1,44 @@
+let message
+let shoppingList
+//creating pizza object with default properites and two methods
+const pizza = {
+    crust: 'thin',
+    size: 'small',
+    topping: 'pepperoni',
+    buildPizza: function () {
+        console.log('build pizza method has been called')
+        message = `Baking a <span>${pizza.size}</span> pizza on a <span>${pizza.crust}</span> crust with <span>${pizza.topping}</span>, marinara, and cheese just for you!`
+        //message display
+        document.querySelector('#feedback').innerHTML = message
+    },
+    buildShoppingList: function () {
+        let flour = 1
+        let cheese = 1
+        let topping = 1
+        if (pizza.crust === 'thick') flour *= 2 
+        if (pizza.size === "large") flour *= 2, cheese *=2, topping *= 2
 
-
-
-//Function that tells the story 
-function tellStory(){
-//create a nounArray = querySelectr("#nouns")
-
-var nouns = document.getElementById("nouns")
-var lowerNouns = nouns.value.toLowerCase()
-var nounList = lowerNouns.replaceAll('\n', ' ').split(" ")
-
-var verbs = document.getElementById("verbs")
-var lowerVerbs = verbs.value.toLowerCase()
-var verbList = lowerVerbs.replaceAll('\n', ' ').split(" ")
-
-var adjectives = document.getElementById("adjectives")
-var lowerAdjectives = adjectives.value.toLowerCase()
-var adjectiveList = lowerAdjectives.replaceAll('\n', ' ').split(" ")
-
-console.log(nounList)
-console.log(adjectiveList)
-console.log(verbList)
-
-//Now I have an array of nouns that I can use to create a story...?
-
-
-
-
-
-const myStory = `Once upon a time there was an army of <span> ${adjectiveList[0]}</span><span> ${nounList[0]}</span> that would 
-wage a war within their <span> ${nounList[1]}</span>. That is, until the <span> ${nounList[4]}</span> king decided to <span> ${verbList[0]}</span>
-a <span> ${nounList[3]}</span> over all the <span> ${nounList[0]}</span>. Finally the <span> ${adjectiveList[1]}</span> army of <span> ${adjectiveList[2]}</span> <span> ${nounList[0]} </span>
-united against the <span> ${nounList[4]}</span> and demand that he <span> ${verbList[2]}</span> his issues. Finally, the <span> ${nounList[2]}</span> lord
-declared a treaty and now they all <span> ${verbList[1]}</span> in peace.`
-
-storyPlace = document.querySelector("#story").innerHTML = myStory
+        shoppingList = `If you want to make your pizza at home you will need <span>${flour}</span> bag(s) of flour, <span>${topping}</span> package(s) of <span>${pizza.topping}</span>, <span>${cheese}</span> cup(s) of cheese, a <span>${pizza.size}</span> can of sauce, and a <span>${pizza.size}</span> baking pan`
+        document.querySelector('#feedback').innerHTML = shoppingList
+    }
 }
+
+//set pizza crust by buttons
+document.querySelector("#thin").addEventListener('click', () => pizza.crust = 'thin')
+document.querySelector("#thick").addEventListener('click', () => pizza.crust = 'thick')
+//set pizza size by buttons
+document.querySelector("#small").addEventListener('click', () => pizza.size = "small")
+document.querySelector("#large").addEventListener('click', () => pizza.size = "large")
+//set pizza topping by buttons
+document.querySelector("#pepperoni").addEventListener('click', () => pizza.topping = "pepperoni")
+document.querySelector("#pineapple").addEventListener('click', () => pizza.topping = "pineapple")
+
+
+
+//build pizza button
+document.querySelector('#build').addEventListener('click', pizza.buildPizza)
+
+//build shopping list button
+document.querySelector('#shopping').addEventListener('click', pizza.buildShoppingList)
+
+
