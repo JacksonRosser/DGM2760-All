@@ -1,45 +1,39 @@
-let message
-let shoppingList
-//creating pizza object with default properites and two methods
+// create an object with 4 questions, 4 answers, and a method to match them
+const question = {
+    stem: "What is updog?",
+    option1: "Our Great Savior",
+    option2: "Updog Is Not a ''What'', But a Who.",
+    option3: "Nothing Much, What's Up With You?",
+    option4: "None of The Above",
 
-const pizza = {
-    crust: 'thin',
-    size: 'small',
-    topping: 'pepperoni',
-    buildPizza: function () {
-        console.log('build pizza method has been called')
-        message = `Baking a <span>${pizza.size}</span> pizza on a <span>${pizza.crust}</span> crust with <span>${pizza.topping}</span>, marinara, and cheese just for you!`
-        //message display
-        document.querySelector('#feedback').innerHTML = message
+    correct: 3,
+    display: () =>{
+        document.querySelector("#stem").textContent= question.stem
+        document.querySelector("#answer1").textContent = question.option1
+        document.querySelector("#answer2").textContent = question.option2
+        document.querySelector("#answer3").textContent = question.option3
+        document.querySelector("#answer4").textContent = question.option4
     },
-    buildShoppingList: function () {
-        let flour = 1
-        let cheese = 1
-        let topping = 1
-        if (pizza.crust === 'thick') flour *= 2 
-        if (pizza.size === "large") flour *= 2, cheese *=2, topping *= 2
-
-        shoppingList = `If you want to make your pizza at home you will need <span>${flour}</span> bag(s) of flour, <span>${topping}</span> lb(s) of <span>${pizza.topping}</span>, <span>${cheese}</span> cup(s) of cheese, a <span>${pizza.size}</span> can of sauce, and a <span>${pizza.size}</span> baking pan`
-        document.querySelector('#feedback').innerHTML = shoppingList
+    checkAnswers: (userChoice) =>{
+        //correct answer:
+        if (userChoice === question.correct){
+            document.querySelector(".feedback").textContent = "CORRECT!"
+        }
+        else if(userChoice === 1){
+            document.querySelector(".feedback").innerHTML = `I'm sorry, this answer is not <span>${question.option1}</span>`
+        }
+        else if(userChoice === 2){
+            document.querySelector(".feedback").innerHTML = `I'm sorry, this answer is not <span>${question.option2}</span>`
+        }
+        else if(userChoice === 4){
+            document.querySelector(".feedback").innerHTML = `I'm sorry, this answer is not <span>${question.option4}</span>`
+        }
     }
 }
 
-//set pizza crust by buttons
-document.querySelector("#thin").addEventListener('click', () => pizza.crust = 'thin')
-document.querySelector("#thick").addEventListener('click', () => pizza.crust = 'thick')
-//set pizza size by buttons
-document.querySelector("#small").addEventListener('click', () => pizza.size = "small")
-document.querySelector("#large").addEventListener('click', () => pizza.size = "large")
-//set pizza topping by buttons
-document.querySelector("#pepperoni").addEventListener('click', () => pizza.topping = "pepperoni")
-document.querySelector("#pineapple").addEventListener('click', () => pizza.topping = "pineapple")
+document.querySelector("#answer1").addEventListener('click', () => question.checkAnswers(1))
+document.querySelector("#answer2").addEventListener('click', () => question.checkAnswers(2))
+document.querySelector("#answer3").addEventListener('click', () => question.checkAnswers(3))
+document.querySelector("#answer4").addEventListener('click', () => question.checkAnswers(4))
 
-
-
-//build pizza button
-document.querySelector('#build').addEventListener('click', pizza.buildPizza)
-
-//build shopping list button
-document.querySelector('#shopping').addEventListener('click', pizza.buildShoppingList)
-
-
+question.display()

@@ -64,14 +64,15 @@ article{
 button{
     border-radius: 4px;
     padding: 5px;
-    margin: 10px; 
+    margin: 10px;
+    background-color: orange
 }
 .subHead{
     color: rgb(139, 1, 125);
     text-decoration: underline;
 }
 span{
-    color: red;
+    color: purple;
 }
 h1{
     color: rgb(43, 39, 39);
@@ -83,6 +84,13 @@ h2 {
     color: rgb(67, 14, 62);
     text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
 }
+#stem{
+    color: rgb(67, 14, 62);
+    text-decoration: underline;
+}
+.feedback{
+    color:orange;
+}
 #instructions{
     color: rgb(43, 39, 39);
 }
@@ -91,12 +99,15 @@ h2 {
     text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
     font-size: 35px;
 }
+#buttons{
+    display: flex;
+}
 
 h3{
     color: rgb(53, 1, 60);;
 }
 li{
-    color: rgb(186, 1, 1);
+    color: rgb(82, 7, 103);
     margin-left: 23px;
 }
 main{
