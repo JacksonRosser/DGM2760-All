@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(244, 226, 190);
+    background-color: rgb(165, 139, 171);
     font-size: larger;
 } 
 header {
@@ -8,7 +8,7 @@ header {
     margin: 0 auto;
     text-align: center;
     border: solid 1px;
-    background-image: url("../images/pizza.jpg");
+    background-image: url("../images/tomb.jpg");
     background-size: cover;
     height: 190px;
     text-shadow: darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
@@ -67,7 +67,7 @@ button{
     margin: 10px; 
 }
 .subHead{
-    color: orange;
+    color: rgb(139, 1, 125);
     text-decoration: underline;
 }
 span{
@@ -80,7 +80,7 @@ h1{
     font-size: larger;
 }
 h2 {
-    color: goldenrod;
+    color: rgb(67, 14, 62);
     text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
 }
 #instructions{
@@ -93,7 +93,7 @@ h2 {
 }
 
 h3{
-    color: rgb(183, 162, 57);
+    color: rgb(53, 1, 60);;
 }
 li{
     color: rgb(186, 1, 1);
@@ -106,11 +106,11 @@ main{
 footer{
     display: flex;
     justify-content: center;
-    background-color: darkgoldenrod;
+    background-color: darkviolet;
     max-height: auto;  
     max-width: 800px;
     margin: auto; 
-    border: solid 1px rgb(254, 233, 0);
+    border: solid 1px rgb(178, 0, 254);
     margin-top: 20px;
 }
 .info{
@@ -125,7 +125,7 @@ footer p{
     text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
 }
 li::marker{
-content: "🍕"
+content: "💀"
 }
 
 
