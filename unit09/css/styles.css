@@ -66,12 +66,24 @@ header h2 {
 
 /*NAVIGATION FOR THE Small Screen*/
 @media only screen and (max-width: 600px) {
-	nav#smallNavArea{display: block; }
+	nav#smallNavArea{display: flex;
+	flex-direction: column; }
 	ul#primaryNavigation {display: none;}
 
-	nav#smallNavArea {height:100vh; background-color: #adadad;}
-	nav#smallNavArea ul  {padding: .5em 0;}
-	nav#smallNavArea ul li {list-style: none;}
+	nav#smallNavArea {height:100vh; background-color: #adadad;
+	align-items: center;
+	}
+	nav#smallNavArea ul  {padding: .5em 0;
+		list-style-type: none;
+	}
+	
+	li{
+		margin: 5px;
+	}
+	nav#smallNavArea ul li {
+		margin: 5px;
+	}
+	
 	nav#smallNavArea ul li a {
 		display: block;
 		list-style: none;
@@ -81,6 +93,8 @@ header h2 {
 		text-decoration: none;
 		color: #FFF;
 		background-color: rgba(0,0,0,0.2);
+		justify-content: center;
+		padding: 5px 30vw 5px 30vw;
 	}
 
 	div.smallMenuLink {
