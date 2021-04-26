@@ -1,39 +1,35 @@
-// create an object with 4 questions, 4 answers, and a method to match them
-const question = {
-    stem: "What is updog?",
-    option1: "Our Great Savior",
-    option2: "Updog Is Not a ''What'', But a Who.",
-    option3: "Nothing Much, What's Up With You?",
-    option4: "None of The Above",
+// create an async function to deploy at an unconventional time
 
-    correct: 3,
-    display: () =>{
-        document.querySelector("#stem").textContent= question.stem
-        document.querySelector("#answer1").textContent = question.option1
-        document.querySelector("#answer2").textContent = question.option2
-        document.querySelector("#answer3").textContent = question.option3
-        document.querySelector("#answer4").textContent = question.option4
-    },
-    checkAnswers: (userChoice) =>{
-        //correct answer:
-        if (userChoice === question.correct){
-            document.querySelector(".feedback").textContent = "CORRECT!"
-        }
-        else if(userChoice === 1){
-            document.querySelector(".feedback").innerHTML = `I'm sorry, this answer is not <span>${question.option1}</span>`
-        }
-        else if(userChoice === 2){
-            document.querySelector(".feedback").innerHTML = `I'm sorry, this answer is not <span>${question.option2}</span>`
-        }
-        else if(userChoice === 4){
-            document.querySelector(".feedback").innerHTML = `I'm sorry, this answer is not <span>${question.option4}</span>`
-        }
-    }
+async function getHotelData(){
+
+    try {
+        const response = await fetch('javascript/hotel.json')
+        return await response.json() //return the JSON object 
+    } catch (error) {
+        console.error(error)}
 }
 
-document.querySelector("#answer1").addEventListener('click', () => question.checkAnswers(1))
-document.querySelector("#answer2").addEventListener('click', () => question.checkAnswers(2))
-document.querySelector("#answer3").addEventListener('click', () => question.checkAnswers(3))
-document.querySelector("#answer4").addEventListener('click', () => question.checkAnswers(4))
+let hotelData = {}
 
-question.display()
+getHotelData().then(data=> hotelData = data)
+
+
+var anchor = document.querySelectorAll('a')
+anchor.forEach(title => {title.addEventListener('click', hotelInfo)});
+
+//make click handlers
+function hotelInfo(event){
+    //find out what was clicked, match the name with JSON
+    
+    let hotelChoice= hotelData.hotels.find(hotel=>{
+        return event.target.id === hotel.name.toLowerCase()
+    })
+    console.log(hotelChoice)
+//I'm thinking something like  onclick of marriot button, document.querySelector(#rooms).textContent(hotelData[0].rooms), etc.
+    document.querySelector("#hotelName").textContent = `${hotelChoice.name}`
+    document.querySelector("#address").textContent= `  ${hotelChoice.address}`
+    document.querySelector("#rooms").textContent= `  ${hotelChoice.rooms}`
+    document.querySelector("#gym").textContent= `  ${hotelChoice.gym}`
+    document.querySelector("#type").textContent= `  ${hotelChoice.roomTypes}`
+    document.querySelector('#roomImage').setAttribute('src', `images/${hotelChoice.picture}`)
+}
