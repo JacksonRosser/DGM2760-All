@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 236, 210);
+    font-size: larger;
+} 
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px;
+    background-image: url("../images/hotel.jpg");
+    background-size: cover;
+    height: 190px;
+    text-shadow: darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
+    font-size: 25px;
+}
+#slogan{
+    text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
+    font-size: 25px;
+}
+#newArea{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+article h2{
+    text-decoration: underline;
+    color: rgb(0, 49, 164)
+}
+#hotelName{
+    text-decoration: underline;
+}
+.hotels{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background-color: burlywood;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    
+}
+.hotels{
+    padding: 5px;
+}
+.hotels a{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+#hotelDetails p{
+padding: 5px;
+display:block;
+border-radius: 10px;
+background-color: whitesmoke;
+block-size: auto;
+writing-mode: vertical-lr;
+block-size: auto;
+writing-mode: horizontal-tb;
+color: rgb(57, 57, 57);
+}
+#hotelDetails{
+    max-width: 400px;
+}
+.hotels li{
+    margin:0px;
+}
+article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nouns{
+    margin: 0px;
+    width: 197px;
+    height: 57px;
+}
+#verbs{
+    margin: 0px;
+    width: 197px;
+    height: 57px;
+}
+#adjectives{
+    margin: 0px;
+    width: 197px;
+    height: 57px;
+}
+#storyDisplay{
+    margin:left;
+    background-color: rgb(228, 247, 251);
+}
+#displayArea{
+    margin-left: 20px;
+}
+#treeDisplay{
+    background-color: rgb(79, 156, 106);
+}
+.buttonList{
+    display:flex;
+    flex-direction: column;
+}
+button{
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    background-color: orange
+}
+.subHead{
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+span{
+    color: rgb(188, 3, 188);
+}
+h1{
+    color: whitesmoke;
+}
+#menu h2{
+    font-size: larger;
+}
+h2 {
+    color: burlywood;
+    text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
+}
+#stem{
+    color: rgb(67, 14, 62);
+    text-decoration: underline;
+}
+.feedback{
+    color:orange;
+}
+#instructions{
+    color: rgb(43, 39, 39);
+}
+#slogan{
+    margin-top: 0px;
+    text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
+    font-size: 35px;
+}
+#buttons{
+    display: flex;
+}
+
+h3{
+    color: burlywood;
+}
+li{
+    color: rgb(57, 57, 57);
+    margin-left: 23px;
+}
+main{
+    max-width: 750px;
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+    max-height: auto;  
+    max-width: 800px;
+    margin: auto; 
+    border: solid 1px darkgoldenrod;
+    margin-top: 20px;
+}
+.info{
+    color: rgb(210, 105, 105);
+    text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
+    padding-left: 46px;
+}
+footer p{
+    color: whitesmoke;
+    margin: auto;
+    
+    text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
+}
+li::marker{
+content: "🏨"
+}
+.hotels li::marker{
+    content: none;
+
+}
+
+.a1{
+    min-width: auto;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.a2, .a3, .a4{
+    min-width: 100px;
+    text-align: center;
+    
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.collapse{
+    min-width: 20px;
+}
+.a2 div{
+    font-size: 2rem;
+}
+#gameArea{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: bisque;
+}
