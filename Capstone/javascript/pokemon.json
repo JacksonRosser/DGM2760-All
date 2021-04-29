@@ -3,21 +3,21 @@
         {
             "name": "Bulbasaur",
             "type": "Grass/Poison" ,
-            "evolution":["Ivysaur", "Venusaur"] ,
+            "evolution":["Ivysaur", " Venusaur"] ,
             "pokedex": "Bulbasaur. It bears the seed of a plant on its back from birth. The seed slowly develops. Researchers are unsure whether to classify Bulbasaur as a plant or animal. Bulbasaur are extremely tough and very difficult to capture in the wild."
         },
 
         {
             "name": "Charmander",
             "type": "Fire" ,
-            "evolution":["Charmeleon", "Charizard"] ,
+            "evolution":["Charmeleon", " Charizard"] ,
             "pokedex":"Charmander. A flame burns on the tip of its tail from birth. It is said that a Charmander dies if its flame ever goes out."
         },
 
         {
             "name": "Squirtle",
             "type": "Water" ,
-            "evolution":["Wartortle", "Blastoise"] ,
+            "evolution":["Wartortle", " Blastoise"] ,
             "pokedex":"Squirtle. This Tiny Turtle Pokémon draws its long neck into its shell to launch incredible water attacks with amazing range and accuracy. The blasts can be quite powerful."
         }
     ]

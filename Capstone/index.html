@@ -11,36 +11,52 @@
 <body>
     <header>
         <h1 id="title">Capstone Project</h1>
-        <h2 id="slogan">JSON Fetching</h2>
+        <h2 id="slogan">Gotta Catch 'em All!</h2>
     </header>
 
     <main>
-        <h1 class="subHead">Hotel Booking</h1>
+        <h1 class="subHead">Gotta Catch 'em All!</h1>
+        <p id="welcomeMessage"></p>
                 <!--
 Objectives: If else/ or switch statements
-            Create elements, set their values, and append them to the DOM using JAVA
-            Custom Function that uses parameters and returns values
-            Use template literals to combine strings and embedded expressions.
-            Create JavaScript objects with properties and methods.
+            XCreate elements, set their values, and append them to the DOM using JAVA
+            XCustom Function that uses parameters and returns values
+            XUse template literals to combine strings and embedded expressions.
+            XCreate JavaScript objects with properties and methods.
 
             Use modern JavaScript Array methods to create, append, copy, or delete items from arrays.
-            Load an external JSON file or Fetch remote JSON data (e.g. from a favorite API) and display the data in your web page.
+            XLoad an external JSON file or Fetch remote JSON data (e.g. from a favorite API) and display the data in your web page.
 
 
         -->
-            <h2>Select a Pokemon</h2>
-            <ul class="hotels">
+<h2 class="sectionHead">Which is your favorite Pokemon Game?</h2>
+<div id="sectionOne">
+
+<div id="gameDisplay">
+
+</div>
+
+<div id="buttonList">
+    <button id="redBlue">Red/Blue</button>
+    <button id="rubySaph">Ruby/Saphire</button>
+    <button id="sunMoon">Sun/Moon</button>
+    <button id="swordShield">Sword/Shield</button>
+</div>
+<p id="message"></p>
+</div>
+            <h2 class ="sectionHead">Select a Pokemon</h2>
+            <ul class="starters">
                 <li><a href="#" id="bulbasaur">Bulbasaur</a></li>
                 <li><a href="#" id="charmander">Charmander</a></li>
                 <li><a href="#" id='squirtle'>Squirtle</a></li>
 
             </ul>
-<div id=hotelDetails>
-            <h2 id="pokeName">Pokemon</h2>
+<div id=pokeDetails>
+            <h2 id="pokeName" class="subHead">Pokemon</h2>
             <img id="pokeImage">
             <p>Type: <span id="type"></span></p>
             <p>Evolution: <span id="evolution"></span></p>
-            <p>Pokedex<span id="pokedex"></span></p>
+            <p>Pokedex: <span id="pokedex"></span></p>
 
 
 </div>

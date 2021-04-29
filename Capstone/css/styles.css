@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 236, 210);
+    background-color: white;
     font-size: larger;
 } 
 header {
@@ -11,44 +11,42 @@ header {
     background-image: url("../images/pokemon.jpg");
     background-size: cover;
     height: 190px;
-    text-shadow: darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
+    
+   
     font-size: 25px;
+}
+header h1, #slogan{
+    color: #FFDE00;
+    text-shadow: #3b4cca 3px 3px, #3b4cca 3px 3px, #3b4cca 3px 3px, #3b4cca 3px 3px;
 }
 #slogan{
-    text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
     font-size: 25px;
 }
-#newArea{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-article h2{
-    text-decoration: underline;
-    color: rgb(0, 49, 164)
-}
-#hotelName{
+
+
+#pokeName{
     text-decoration: underline;
 }
-.hotels{
+.starters{
     list-style-type: none;
     display: flex;
     align-items: center;
-    background-color: burlywood;
+    border: 1px solid #b3a125;
+    background-color: #FFDE00;
     justify-content: space-evenly;
     padding-left: 0px;
     
 }
-.hotels{
+.starters{
     padding: 5px;
 }
-.hotels a{
+.starters a{
     text-decoration: none;
     background-color: white;
     border-radius: 5px;
     color: black;
 }
-#hotelDetails p{
+#pokeDetails p{
 padding: 5px;
 display:block;
 border-radius: 10px;
@@ -59,10 +57,17 @@ block-size: auto;
 writing-mode: horizontal-tb;
 color: rgb(57, 57, 57);
 }
-#hotelDetails{
+#pokeDetails{
     max-width: 400px;
+    margin: 0px auto;
 }
-.hotels li{
+#pokeImage{
+margin-left: 100px;
+}
+#pokeName{
+    text-align: center;
+}
+.starters li{
     margin:0px;
 }
 article{
@@ -95,9 +100,28 @@ article{
 #treeDisplay{
     background-color: rgb(79, 156, 106);
 }
-.buttonList{
+#buttonList{
     display:flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+#gameDisplay{
+    display: flex;
+    justify-content: center;
+    
+}
+#gameDisplay img{
+    border: solid 1px #3b4cca;
+    box-shadow: 5px 2px 2px #3b4cca;
+}
+#message{
+    text-align: center;
+    color: #FFDE00;
+    text-shadow: #3b4cca 1px 1px, #3b4cca 1px 1px, #3b4cca 1px 1px, #3b4cca 1px 1px;
+}
+#welcomeMessage{
+    color: #FFDE00;
+    text-shadow: #3b4cca 1px 1px, #3b4cca 1px 1px, #3b4cca 1px 1px, #3b4cca 1px 1px;
 }
 button{
     border-radius: 4px;
@@ -106,46 +130,22 @@ button{
     background-color: orange
 }
 .subHead{
-    color: darkgoldenrod;
+    color: #FF0000;
     text-decoration: underline;
 }
 span{
-    color: rgb(188, 3, 188);
-}
-h1{
-    color: whitesmoke;
-}
-#menu h2{
-    font-size: larger;
-}
-h2 {
-    color: burlywood;
-    text-shadow: black .25px .25px, black .25px .25px, black .25px .25px, black .25px .25px;
-}
-#stem{
-    color: rgb(67, 14, 62);
-    text-decoration: underline;
-}
-.feedback{
-    color:orange;
-}
-#instructions{
-    color: rgb(43, 39, 39);
-}
-#slogan{
-    margin-top: 0px;
-    text-shadow:darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px, darkgoldenrod 3px 3px;
-    font-size: 35px;
+    color: #FF0000;
 }
 #buttons{
     display: flex;
+    
 }
 
-h3{
-    color: burlywood;
+.sectionHead{
+    color:#CC0000;
 }
 li{
-    color: rgb(57, 57, 57);
+    color: #FF0000;
     margin-left: 23px;
 }
 main{
@@ -155,7 +155,7 @@ main{
 footer{
     display: flex;
     justify-content: center;
-    background-color: goldenrod;
+    background-color: #3b4cca;
     max-height: auto;  
     max-width: 800px;
     margin: auto; 
@@ -168,41 +168,25 @@ footer{
     padding-left: 46px;
 }
 footer p{
-    color: whitesmoke;
+    color: #FFDE00;
     margin: auto;
     
     text-shadow: white .25px .25px, white .25px .25px, white .25px .25px, white .25px .25px;
 }
-li::marker{
-content: "🏨"
-}
-.hotels li::marker{
-    content: none;
 
-}
 
-.a1{
-    min-width: auto;
-    padding-bottom: 7px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.a2, .a3, .a4{
-    min-width: 100px;
-    text-align: center;
+.starters li{
+    list-style-image: url("../images/Pokeball.png");
     
-    padding-bottom: 7px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
-.collapse{
-    min-width: 20px;
+.starters a{
+    color: #FFDE00;
+    text-shadow: #3b4cca .5px .5px, #3b4cca .5px .5px, #3b4cca .5px .5px, #3b4cca .5px .5px;
+    background-color: #3b4cca;
 }
-.a2 div{
-    font-size: 2rem;
+.starters ul{
+    background-color: #FFDE00;
 }
-#gameArea{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: bisque;
+li ::marker{
+    height: 20px;
 }
